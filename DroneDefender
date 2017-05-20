@@ -1,0 +1,23 @@
+This can incapacitate some ariel drones with applying a Yagi to the Alpha. The drones utilize an
+emergency GPS guided take off and landing proceedure when the ISM or wifi signal is lost, or jammed. 
+Simply pointing a Yagi at a drone using 2.4 GHz will cause it to land and break the line of site to the 
+drone's operator. 
+A system for portability is achieved using a 32 "D" cell Battery pack, a resberry pi, a Yagi high gain directional antenae,
+50 mm of LMR-400 w/ rp-sma on the alpha side and a TNC - or whatever you have on your Yagi.
+The FCC has the following rules regarding these devices
+Maximum transmitter output power, fed into the antenna, is 30 dBm (1 watt)
+Maximum Effective Isotropic Radiated Power (EIRP) is 36 dBm (4 watt).
+however there is also another less known about exception to the above limits which will allow operation of this device
+and be within both the FCC regulations and still take out a drone. EIRP is determined by adding the output from the transmitter 
+to the gain from antenae.
+Problems:
+the output power of the alpha is a maximum of 1 watt which is internally controlled. According to the company the output power
+does not come close to 1 watt. It also states this can e tweaked by using external utilities. Since our operation is simplex and
+I suspect the Alpha uses the latency from a normal connection to determine the output, a means of controlling the output power
+would be helpful.
+
+Also a power meter would be helpful
+
+the newest drones use 5.8 GHz which is covered in 802.11a. 
+Antenaes that work are vertical yagi - uda and triple phased yagi. Bringing down cell phone controlled drone instanly from
+approx 100 yards using a lab system of the software running on a laptop.
